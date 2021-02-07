@@ -1,0 +1,14 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-meu-primeiro-block {
+  background-color: var(--wp-admin-theme-color);
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
