@@ -1,34 +1,17 @@
-/**
- * Retrieves the translation of text.
- *
- * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
- */
 import { __ } from '@wordpress/i18n';
-
-/**
- * React hook that is used to mark the block wrapper element.
- * It provides all the necessary props like the class name.
- *
- * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
- */
 import { useBlockProps } from '@wordpress/block-editor';
 
-/**
- * The save function defines the way in which the different attributes should
- * be combined into the final markup, which is then serialized by the block
- * editor into `post_content`.
- *
- * @see https://developer.wordpress.org/block-editor/developers/block-api/block-edit-save/#save
- *
- * @return {WPElement} Element to render.
- */
 export default function save() {
 	return (
-		<p { ...useBlockProps.save() }>
-			{ __(
-				'Meu Primeiro Block – hello from the saved content!',
-				'meu-primeiro-block'
-			) }
-		</p>
+		<div { ...useBlockProps.save() }>
+			<img
+				src="http://curso-gutenberg.local/wp-content/uploads/2021/03/avatar_fellyph.jpg"
+				alt={ __( 'Fellyph Cintra', 'meu-primeiro-block' ) }
+			/>
+			<div className="content">
+				<h3 className="title">{ __( 'Curso de Criação de blocos Gutenberg', 'meu-primeiro-block' ) }</h3>
+				<h4 className="sub-title">{ __( 'Por Fellyph Cintra', 'meu-primeiro-block' ) }</h4>
+			</div>
+		</div>
 	);
 }
