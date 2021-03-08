@@ -12,9 +12,9 @@ import save from './save';
 
 registerBlockType( 'create-block/meu-primeiro-block', {
 	apiVersion: 2,
-	title: __( 'Meu Primeiro Block', 'meu-primeiro-block' ),
+	title: __( 'Card do curso Gutenberg', 'meu-primeiro-block' ),
 	description: __(
-		'Example block written with ESNext standard and JSX support – build step required.',
+		'Bloco com informações do curso gutenberg',
 		'meu-primeiro-block'
 	),
 	category: 'widgets',

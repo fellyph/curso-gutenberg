@@ -6,7 +6,7 @@
  */
 .wp-block-create-block-meu-primeiro-block {
   background-color: #222;
-  color: #fff;
+  color: #f4f4f4;
   padding: 1.2em;
   display: flex;
 }
@@ -18,6 +18,9 @@
 }
 .wp-block-create-block-meu-primeiro-block .content {
   margin-left: 20px;
+}
+.wp-block-create-block-meu-primeiro-block .content .link-repo {
+  color: #ff9800;
 }
 .wp-block-create-block-meu-primeiro-block .title,
 .wp-block-create-block-meu-primeiro-block .sub-title {
