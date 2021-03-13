@@ -2,16 +2,12 @@ import { __ } from '@wordpress/i18n';
 import { useBlockProps } from '@wordpress/block-editor';
 
 import './editor.scss';
+import { Avatar } from './shared/avatar/avatar';
 
 export default function Edit() {
 	return (
 		<div { ...useBlockProps() }>
-			<img
-				className="avatar"
-				src="http://curso-gutenberg.local/wp-content/uploads/2021/03/avatar_fellyph.jpg"
-				alt={ __( 'Fellyph Cintra', 'meu-primeiro-block' ) }
-				loading="lazy"
-			/>
+			<Avatar />
 			<div className="content">
 				<h3 className="title">
 					{ __(
