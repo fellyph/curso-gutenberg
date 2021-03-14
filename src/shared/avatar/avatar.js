@@ -6,5 +6,6 @@ export const Avatar = () => (
 		src="http://curso-gutenberg.local/wp-content/uploads/2021/03/avatar_fellyph.jpg"
 		alt={ __( 'Fellyph Cintra', 'meu-primeiro-block' ) }
 		loading="lazy"
+		width="180"
 	/>
 );

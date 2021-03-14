@@ -23,6 +23,15 @@ export default function Edit( { attributes } ) {
 					<a href="#" className="link-repo">
 						{ __( 'Clicando aqui', 'meu-primeiro-block' ) }
 					</a>
+					<p>
+						{ attributes.avatarUrl }
+					</p>
+					<p>
+						{ attributes.avatarWidth }
+					</p>
+					<p>
+						{ attributes.conteudoLink }
+					</p>
 				</div>
 			</div>
 		</div>

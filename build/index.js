@@ -205,7 +205,7 @@ function Edit(_ref) {
   }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Por Fellyph Cintra', 'meu-primeiro-block')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", null, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Acompanhe as aulas no github:', 'meu-primeiro-block'), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
     href: "#",
     className: "link-repo"
-  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Clicando aqui', 'meu-primeiro-block')))));
+  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Clicando aqui', 'meu-primeiro-block')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, attributes.avatarUrl), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, attributes.avatarWidth), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, attributes.conteudoLink))));
 }
 
 /***/ }),
@@ -264,6 +264,23 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__["registerBlockType"])('cre
     ano: {
       type: 'number',
       default: 2021
+    },
+    avatarUrl: {
+      type: 'string',
+      source: 'attribute',
+      selector: '.avatar',
+      attribute: 'src'
+    },
+    avatarWidth: {
+      type: 'string',
+      source: 'attribute',
+      selector: 'img',
+      attribute: 'width'
+    },
+    conteudoLink: {
+      type: 'string',
+      source: 'text',
+      selector: 'a.link-repo'
     }
   },
   edit: _edit__WEBPACK_IMPORTED_MODULE_3__["default"],
@@ -329,7 +346,8 @@ var Avatar = function Avatar() {
     className: "avatar",
     src: "http://curso-gutenberg.local/wp-content/uploads/2021/03/avatar_fellyph.jpg",
     alt: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Fellyph Cintra', 'meu-primeiro-block'),
-    loading: "lazy"
+    loading: "lazy",
+    width: "180"
   });
 };
 

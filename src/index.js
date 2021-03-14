@@ -31,6 +31,23 @@ registerBlockType( 'create-block/meu-primeiro-block', {
 			type: 'number',
 			default: 2021
 		},
+		avatarUrl: {
+			type: 'string',
+			source: 'attribute',
+			selector: '.avatar',
+			attribute: 'src',
+		},
+		avatarWidth: {
+			type: 'string',
+			source: 'attribute',
+			selector: 'img',
+			attribute: 'width',
+		},
+		conteudoLink: {
+			type: 'string',
+			source: 'text',
+			selector: 'a.link-repo',
+		},
 	},
 
 	edit: Edit,
