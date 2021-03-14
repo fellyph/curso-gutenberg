@@ -20,7 +20,6 @@ registerBlockType( 'create-block/meu-primeiro-block', {
 	category: 'widgets',
 	icon: 'smiley',
 	supports: {
-		// Removes support for an HTML mode.
 		html: false,
 	},
 

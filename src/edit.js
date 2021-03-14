@@ -19,7 +19,13 @@ export default function Edit() {
 					{ __( 'Por Fellyph Cintra', 'meu-primeiro-block' ) }
 				</h4>
 				<div>
-				{ __( 'Acompanhe as aulas no github:', 'meu-primeiro-block' ) } <a href="#" className="link-repo">{ __( 'Clicando aqui', 'meu-primeiro-block' ) }</a>
+					{ __(
+						'Acompanhe as aulas no github:',
+						'meu-primeiro-block'
+					) }{ ' ' }
+					<a href="#" className="link-repo">
+						{ __( 'Clicando aqui', 'meu-primeiro-block' ) }
+					</a>
 				</div>
 			</div>
 		</div>
