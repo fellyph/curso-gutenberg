@@ -195,17 +195,25 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Edit(_ref) {
-  var attributes = _ref.attributes;
+  var attributes = _ref.attributes,
+      setAttributes = _ref.setAttributes;
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", Object(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__["useBlockProps"])(), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_shared_avatar_avatar__WEBPACK_IMPORTED_MODULE_4__["Avatar"], null), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
     className: "content"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h3", {
     className: "title"
-  }, attributes.titulo, " - ", attributes.ano), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h4", {
-    className: "sub-title"
-  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Por Fellyph Cintra', 'meu-primeiro-block')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", null, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Acompanhe as aulas no github:', 'meu-primeiro-block'), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
+  }, attributes.titulo, " - ", attributes.ano), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__["RichText"], {
+    className: "sub-title",
+    tagName: "h4",
+    value: attributes.subtitulo,
+    onChange: function onChange(novoTexto) {
+      setAttributes({
+        subtitulo: novoTexto
+      });
+    }
+  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", null, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Acompanhe as aulas no github:', 'meu-primeiro-block'), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
     href: "#",
     className: "link-repo"
-  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Clicando aqui', 'meu-primeiro-block')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, attributes.avatarUrl), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, attributes.avatarWidth), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, attributes.conteudoLink))));
+  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Clicando aqui', 'meu-primeiro-block')))));
 }
 
 /***/ }),
@@ -265,22 +273,9 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__["registerBlockType"])('cre
       type: 'number',
       default: 2021
     },
-    avatarUrl: {
+    subtitulo: {
       type: 'string',
-      source: 'attribute',
-      selector: '.avatar',
-      attribute: 'src'
-    },
-    avatarWidth: {
-      type: 'string',
-      source: 'attribute',
-      selector: 'img',
-      attribute: 'width'
-    },
-    conteudoLink: {
-      type: 'string',
-      source: 'text',
-      selector: 'a.link-repo'
+      default: 'por Fellyph Cintra'
     }
   },
   edit: _edit__WEBPACK_IMPORTED_MODULE_3__["default"],

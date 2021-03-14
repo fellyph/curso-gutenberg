@@ -29,24 +29,11 @@ registerBlockType( 'create-block/meu-primeiro-block', {
 		},
 		ano: {
 			type: 'number',
-			default: 2021
+			default: 2021,
 		},
-		avatarUrl: {
+		subtitulo: {
 			type: 'string',
-			source: 'attribute',
-			selector: '.avatar',
-			attribute: 'src',
-		},
-		avatarWidth: {
-			type: 'string',
-			source: 'attribute',
-			selector: 'img',
-			attribute: 'width',
-		},
-		conteudoLink: {
-			type: 'string',
-			source: 'text',
-			selector: 'a.link-repo',
+			default: 'por Fellyph Cintra',
 		},
 	},
 

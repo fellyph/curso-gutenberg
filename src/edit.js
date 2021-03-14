@@ -1,10 +1,10 @@
 import { __ } from '@wordpress/i18n';
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps, RichText } from '@wordpress/block-editor';
 
 import './editor.scss';
 import { Avatar } from './shared/avatar/avatar';
 
-export default function Edit( { attributes } ) {
+export default function Edit( { attributes, setAttributes } ) {
 	return (
 		<div { ...useBlockProps() }>
 			<Avatar />
@@ -12,9 +12,23 @@ export default function Edit( { attributes } ) {
 				<h3 className="title">
 					{ attributes.titulo } - { attributes.ano }
 				</h3>
-				<h4 className="sub-title">
-					{ __( 'Por Fellyph Cintra', 'meu-primeiro-block' ) }
-				</h4>
+				<RichText
+					className="sub-title"
+					tagName="h4"
+					value={ attributes.subtitulo }
+					onChange={ ( novoTexto ) => {
+						setAttributes( { subtitulo: novoTexto } )
+					}}
+				/>
+
+				<RichText
+					className="sub-title"
+					tagName="h4"
+					value={ attributes.subtitulo }
+					onChange={ ( novoTexto ) => {
+						setAttributes( { subtitulo: novoTexto } )
+					}}
+				/>
 				<div>
 					{ __(
 						'Acompanhe as aulas no github:',
@@ -23,15 +37,6 @@ export default function Edit( { attributes } ) {
 					<a href="#" className="link-repo">
 						{ __( 'Clicando aqui', 'meu-primeiro-block' ) }
 					</a>
-					<p>
-						{ attributes.avatarUrl }
-					</p>
-					<p>
-						{ attributes.avatarWidth }
-					</p>
-					<p>
-						{ attributes.conteudoLink }
-					</p>
 				</div>
 			</div>
 		</div>

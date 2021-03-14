@@ -9,7 +9,7 @@ export default function save( props ) {
 			<Avatar />
 			<div className="content">
 				<h3 className="title">
-					{ props.attributes.titulo } - {props.attributes.ano}
+					{ props.attributes.titulo } - { props.attributes.ano }
 				</h3>
 				<h4 className="sub-title">
 					{ __( 'Por Fellyph Cintra', 'meu-primeiro-block' ) }
