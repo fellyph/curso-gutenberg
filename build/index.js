@@ -194,14 +194,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function Edit() {
+function Edit(_ref) {
+  var attributes = _ref.attributes;
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", Object(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__["useBlockProps"])(), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_shared_avatar_avatar__WEBPACK_IMPORTED_MODULE_4__["Avatar"], null), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
     className: "content"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h3", {
     className: "title"
-  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Curso de Criação de blocos Gutenberg', 'meu-primeiro-block')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h4", {
+  }, attributes.titulo, " - ", attributes.ano), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h4", {
     className: "sub-title"
-  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Por Fellyph Cintra', 'meu-primeiro-block')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", null, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Acompanhe as aulas no github:', 'meu-primeiro-block'), " ", Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
+  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Por Fellyph Cintra', 'meu-primeiro-block')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", null, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Acompanhe as aulas no github:', 'meu-primeiro-block'), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
     href: "#",
     className: "link-repo"
   }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Clicando aqui', 'meu-primeiro-block')))));
@@ -253,8 +254,17 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__["registerBlockType"])('cre
   category: 'widgets',
   icon: 'smiley',
   supports: {
-    // Removes support for an HTML mode.
     html: false
+  },
+  attributes: {
+    titulo: {
+      type: 'string',
+      default: 'Curso de criação de blocos Gutenberg'
+    },
+    ano: {
+      type: 'number',
+      default: 2021
+    }
   },
   edit: _edit__WEBPACK_IMPORTED_MODULE_3__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_4__["default"]
@@ -283,14 +293,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function save() {
+function save(props) {
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__["useBlockProps"].save(), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_shared_avatar_avatar__WEBPACK_IMPORTED_MODULE_3__["Avatar"], null), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
     className: "content"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h3", {
     className: "title"
-  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Curso de Criação de blocos Gutenberg', 'meu-primeiro-block')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h4", {
+  }, props.attributes.titulo, " - ", props.attributes.ano), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h4", {
     className: "sub-title"
-  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Por Fellyph Cintra', 'meu-primeiro-block')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", null, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Acompanhe as aulas no github:', 'meu-primeiro-block'), " ", Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
+  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Por Fellyph Cintra', 'meu-primeiro-block')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", null, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Acompanhe as aulas no github:', 'meu-primeiro-block'), ' ', Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
     href: "https://github.com/fellyph/curso-gutenberg",
     className: "link-repo"
   }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Clicando aqui', 'meu-primeiro-block')))));

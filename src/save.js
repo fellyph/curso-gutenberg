@@ -3,16 +3,13 @@ import { useBlockProps } from '@wordpress/block-editor';
 
 import { Avatar } from './shared/avatar/avatar';
 
-export default function save() {
+export default function save( props ) {
 	return (
 		<div { ...useBlockProps.save() }>
 			<Avatar />
 			<div className="content">
 				<h3 className="title">
-					{ __(
-						'Curso de Criação de blocos Gutenberg',
-						'meu-primeiro-block'
-					) }
+					{ props.attributes.titulo } - {props.attributes.ano}
 				</h3>
 				<h4 className="sub-title">
 					{ __( 'Por Fellyph Cintra', 'meu-primeiro-block' ) }

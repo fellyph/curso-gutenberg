@@ -22,6 +22,16 @@ registerBlockType( 'create-block/meu-primeiro-block', {
 	supports: {
 		html: false,
 	},
+	attributes: {
+		titulo: {
+			type: 'string',
+			default: 'Curso de criação de blocos Gutenberg',
+		},
+		ano: {
+			type: 'number',
+			default: 2021
+		},
+	},
 
 	edit: Edit,
 	save,
