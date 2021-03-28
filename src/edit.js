@@ -9,16 +9,13 @@ export default function Edit( { attributes, setAttributes } ) {
 		<div { ...useBlockProps() }>
 			<Avatar />
 			<div className="content">
-				<h3 className="title">
-					{ attributes.titulo } - { attributes.ano }
-				</h3>
 				<RichText
-					className="sub-title"
-					tagName="h4"
-					value={ attributes.subtitulo }
-					onChange={ ( novoTexto ) => {
-						setAttributes( { subtitulo: novoTexto } )
-					}}
+					className="title"
+					tagName="h3"
+					value={ attributes.titulo }
+					onChange={ ( novoTexto ) =>
+						setAttributes( { titulo: novoTexto } )
+					}
 				/>
 
 				<RichText
@@ -26,8 +23,8 @@ export default function Edit( { attributes, setAttributes } ) {
 					tagName="h4"
 					value={ attributes.subtitulo }
 					onChange={ ( novoTexto ) => {
-						setAttributes( { subtitulo: novoTexto } )
-					}}
+						setAttributes( { subtitulo: novoTexto } );
+					} }
 				/>
 				<div>
 					{ __(

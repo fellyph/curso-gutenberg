@@ -1,19 +1,15 @@
 import { __ } from '@wordpress/i18n';
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps, RichText } from '@wordpress/block-editor';
 
 import { Avatar } from './shared/avatar/avatar';
 
-export default function save( props ) {
+export default function save( { attributes } ) {
 	return (
 		<div { ...useBlockProps.save() }>
 			<Avatar />
 			<div className="content">
-				<h3 className="title">
-					{ props.attributes.titulo } - { props.attributes.ano }
-				</h3>
-				<h4 className="sub-title">
-					{ __( 'Por Fellyph Cintra', 'meu-primeiro-block' ) }
-				</h4>
+				<RichText.Content tagName="h3" className="title" value={ attributes.titulo } />
+				<RichText.Content tagName="h4" className="sub-title" value={ attributes.subtitulo } />
 				<div>
 					{ __(
 						'Acompanhe as aulas no github:',
