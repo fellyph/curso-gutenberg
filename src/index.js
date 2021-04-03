@@ -35,6 +35,11 @@ registerBlockType( 'create-block/meu-primeiro-block', {
 			type: 'string',
 			default: 'por Fellyph Cintra',
 		},
+		assuntos: {
+			type: 'array',
+			source: 'children',
+			selector: 'ul.assuntos',
+		}
 	},
 
 	edit: Edit,

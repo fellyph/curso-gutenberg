@@ -10,6 +10,7 @@
 	color: #f4f4f4;
 	padding: 1.2em;
 	display: flex;
+	flex-wrap: wrap;
 
 	.avatar {
 		border-radius: 100%;
@@ -20,10 +21,7 @@
 
 	.content {
 		margin-left: 20px;
-
-		.link-repo {
-			color: #ff9800;
-		}
+		flex: 1;
 	}
 
 	.title,
@@ -38,5 +36,17 @@
 
 	.sub-title {
 		color: #ff9800;
+	}
+
+	.footer {
+		margin-top: 20px;
+		text-align: center;
+		width: 100%;
+		background-color: rgba( 255, 255, 255, 0.3 );
+		padding: 0.5em;
+
+		.link-repo{
+			color: #ff9800;
+		}
 	}
 }

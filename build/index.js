@@ -217,10 +217,23 @@ function Edit(_ref) {
         subtitulo: novoTexto
       });
     }
-  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", null, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Acompanhe as aulas no github:', 'meu-primeiro-block'), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
+  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Assuntos:', 'meu-primeiro-block')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__["RichText"], {
+    className: "assuntos",
+    tagName: "ul",
+    multiline: "li",
+    value: attributes.assuntos,
+    onChange: function onChange(novoAssunto) {
+      setAttributes({
+        assuntos: novoAssunto
+      });
+    },
+    placeholder: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Adicione aqui um assunto', 'meu-primeiro-block')
+  })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("footer", {
+    className: "footer"
+  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Acompanhe as aulas no github:', 'meu-primeiro-block'), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
     href: "#",
     className: "link-repo"
-  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Clicando aqui', 'meu-primeiro-block')))));
+  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Clicando aqui', 'meu-primeiro-block'))));
 }
 
 /***/ }),
@@ -283,6 +296,11 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__["registerBlockType"])('cre
     subtitulo: {
       type: 'string',
       default: 'por Fellyph Cintra'
+    },
+    assuntos: {
+      type: 'array',
+      source: 'children',
+      selector: 'ul.assuntos'
     }
   },
   edit: _edit__WEBPACK_IMPORTED_MODULE_3__["default"],
