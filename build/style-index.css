@@ -4,9 +4,17 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+:root {
+  --color-black: #222;
+  --color-white: #f4f4f4;
+  --color-yellow: #ff9800;
+}
+
 .wp-block-create-block-meu-primeiro-block {
   background-color: #222;
+  background-color: var(--color-black);
   color: #f4f4f4;
+  color: var(--color-white);
   padding: 1.2em;
   display: flex;
   flex-wrap: wrap;
@@ -28,6 +36,7 @@
 }
 .wp-block-create-block-meu-primeiro-block .subject-list li {
   background-color: #ff9800;
+  background-color: var(--color-yellow);
   color: #222;
   padding: 0.3em 0.5em;
   border-radius: 25px;
@@ -45,19 +54,21 @@
 }
 .wp-block-create-block-meu-primeiro-block .title {
   color: #f4f4f4;
+  color: var(--color-white);
 }
 .wp-block-create-block-meu-primeiro-block .sub-title {
   color: #ff9800;
+  color: var(--color-yellow);
 }
 .wp-block-create-block-meu-primeiro-block .footer {
   margin-top: 20px;
   text-align: center;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
   padding: 0.5em;
 }
 .wp-block-create-block-meu-primeiro-block .footer .link-repo {
   color: #ff9800;
+  color: var(--color-yellow);
 }
 
 /*# sourceMappingURL=style-index.css.map*/

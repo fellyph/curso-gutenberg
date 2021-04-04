@@ -5,9 +5,16 @@
  * Replace them with your own styles or remove the file completely.
  */
 
+
+ :root {
+	 --color-black: #222;
+	 --color-white: #f4f4f4;
+	 --color-yellow: #ff9800;
+ }
+
 .wp-block-create-block-meu-primeiro-block {
-	background-color: #222;
-	color: #f4f4f4;
+	background-color: var(--color-black);
+	color: var(--color-white);
 	padding: 1.2em;
 	display: flex;
 	flex-wrap: wrap;
@@ -30,12 +37,13 @@
 		list-style-type: none;
 
 		li {
-			background-color: #ff9800;
+			background-color: var(--color-yellow);
 			color: #222;
 			padding: 0.3em 0.5em;
 			border-radius: 25px;
 			font-weight: 700;
-			margin-bottom: 0.3em;
+			margin: 0.3em;
+			display: inline-block;
 
 			&:before {
 				content: "#";
@@ -51,22 +59,21 @@
 	}
 
 	.title {
-		color: #f4f4f4;
+		color: var(--color-white);
 	}
 
 	.sub-title {
-		color: #ff9800;
+		color: var(--color-yellow);
 	}
 
 	.footer {
 		margin-top: 20px;
 		text-align: center;
 		width: 100%;
-		background-color: rgba( 255, 255, 255, 0.3 );
 		padding: 0.5em;
 
 		.link-repo{
-			color: #ff9800;
+			color: var(--color-yellow);
 		}
 	}
 }
