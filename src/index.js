@@ -38,7 +38,7 @@ registerBlockType( 'create-block/meu-primeiro-block', {
 		assuntos: {
 			type: 'array',
 			source: 'children',
-			selector: 'ul.assuntos',
+			selector: 'ul.subject-list',
 		}
 	},
 

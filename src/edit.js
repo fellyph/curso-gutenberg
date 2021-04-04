@@ -33,7 +33,7 @@ export default function Edit( { attributes, setAttributes } ) {
 					) }
 				</p>
 				<RichText
-					className="assuntos"
+					className="subject-list"
 					tagName="ul"
 					multiline="li"
 					value={ attributes.assuntos }

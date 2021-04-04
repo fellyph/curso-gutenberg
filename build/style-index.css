@@ -21,6 +21,23 @@
   margin-left: 20px;
   flex: 1;
 }
+.wp-block-create-block-meu-primeiro-block .subject-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.wp-block-create-block-meu-primeiro-block .subject-list li {
+  background-color: #ff9800;
+  color: #222;
+  padding: 0.3em 0.5em;
+  border-radius: 25px;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+}
+.wp-block-create-block-meu-primeiro-block .subject-list li:before {
+  content: "#";
+  margin-right: 0.5em;
+}
 .wp-block-create-block-meu-primeiro-block .title,
 .wp-block-create-block-meu-primeiro-block .sub-title {
   margin-bottom: 0.3em;

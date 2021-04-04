@@ -10,7 +10,15 @@ export default function save( { attributes } ) {
 			<div className="content">
 				<RichText.Content tagName="h3" className="title" value={ attributes.titulo } />
 				<RichText.Content tagName="h4" className="sub-title" value={ attributes.subtitulo } />
+				<RichText.Content
+					className="subject-list"
+					tagName="ul"
+					multiline="li"
+					value={ attributes.assuntos }
+				/>
 				<div>
+				</div>
+				<footer className="footer">
 					{ __(
 						'Acompanhe as aulas no github:',
 						'meu-primeiro-block'
@@ -21,7 +29,7 @@ export default function save( { attributes } ) {
 					>
 						{ __( 'Clicando aqui', 'meu-primeiro-block' ) }
 					</a>
-				</div>
+				</footer>
 			</div>
 		</div>
 	);
