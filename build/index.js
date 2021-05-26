@@ -230,7 +230,7 @@ function Edit(_ref) {
     placeholder: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Adicione aqui um assunto', 'meu-primeiro-block')
   })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("footer", {
     className: "footer"
-  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Acompanhe as aulas no github:', 'meu-primeiro-block'), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
+  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Acompanhe as aulas no github: ', 'meu-primeiro-block'), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
     href: "#",
     className: "link-repo"
   }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Clicando aqui', 'meu-primeiro-block'))));
@@ -303,6 +303,14 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__["registerBlockType"])('cre
       selector: 'ul.subject-list'
     }
   },
+  styles: [{
+    name: 'default',
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Squared', 'meu-primeiro-block'),
+    isDefault: true
+  }, {
+    name: 'rounded',
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Rounded', 'meu-primeiro-block')
+  }],
   edit: _edit__WEBPACK_IMPORTED_MODULE_3__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_4__["default"]
 });
@@ -349,7 +357,7 @@ function save(_ref) {
     value: attributes.assuntos
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", null), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("footer", {
     className: "footer"
-  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Acompanhe as aulas no github:', 'meu-primeiro-block'), ' ', Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
+  }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Acompanhe as aulas no github: ', 'meu-primeiro-block'), ' ', Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("a", {
     href: "https://github.com/fellyph/curso-gutenberg",
     className: "link-repo"
   }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Clicando aqui', 'meu-primeiro-block')))));

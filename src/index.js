@@ -41,6 +41,17 @@ registerBlockType( 'create-block/meu-primeiro-block', {
 			selector: 'ul.subject-list',
 		}
 	},
+	styles: [
+		{
+			name: 'default',
+			label: __( 'Squared', 'meu-primeiro-block' ),
+			isDefault: true,
+		},
+		{
+			name: 'rounded',
+			label: __( 'Rounded', 'meu-primeiro-block' )
+		},
+	],
 
 	edit: Edit,
 	save,

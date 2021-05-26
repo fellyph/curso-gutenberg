@@ -20,7 +20,7 @@ export default function save( { attributes } ) {
 				</div>
 				<footer className="footer">
 					{ __(
-						'Acompanhe as aulas no github:',
+						'Acompanhe as aulas no github: ',
 						'meu-primeiro-block'
 					) }{ ' ' }
 					<a

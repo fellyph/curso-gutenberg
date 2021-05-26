@@ -45,7 +45,7 @@ export default function Edit( { attributes, setAttributes } ) {
 			</div>
 			<footer className="footer">
 				{ __(
-					'Acompanhe as aulas no github:',
+					'Acompanhe as aulas no github: ',
 					'meu-primeiro-block'
 				) }
 				<a href="#" className="link-repo">

@@ -5,19 +5,31 @@
  * Replace them with your own styles or remove the file completely.
  */
 :root {
-  --color-black: #222;
+  --color-black: #313131;
   --color-white: #f4f4f4;
   --color-yellow: #ff9800;
+  --border-radius-block-default: 0;
+  --border-radius-block-is-rounded: 25px;
 }
 
 .wp-block-create-block-meu-primeiro-block {
-  background-color: #222;
+  background-color: #313131;
   background-color: var(--color-black);
   color: #f4f4f4;
   color: var(--color-white);
   padding: 1.2em;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 0;
+  border-radius: var(--border-radius-block-default);
+}
+.wp-block-create-block-meu-primeiro-block.is-style-rounded {
+  border-radius: 25px;
+  border-radius: var(--border-radius-block-is-rounded);
+}
+.wp-block-create-block-meu-primeiro-block.is-style-rounded .subject-list li {
+  border-radius: 25px;
+  border-radius: var(--border-radius-block-is-rounded);
 }
 .wp-block-create-block-meu-primeiro-block .avatar {
   border-radius: 100%;
@@ -37,11 +49,14 @@
 .wp-block-create-block-meu-primeiro-block .subject-list li {
   background-color: #ff9800;
   background-color: var(--color-yellow);
-  color: #222;
-  padding: 0.3em 0.5em;
-  border-radius: 25px;
+  color: #313131;
+  color: var(--color-black);
+  padding: 0.3em 1em;
+  border-radius: 0;
+  border-radius: var(--border-radius-block-default);
   font-weight: 700;
-  margin-bottom: 0.3em;
+  margin: 0.3em;
+  display: inline-block;
 }
 .wp-block-create-block-meu-primeiro-block .subject-list li:before {
   content: "#";
