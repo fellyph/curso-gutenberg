@@ -1,0 +1,17 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": {
+		"title": "Gutenberg Block Training",
+		"description": "A WordPress Playground blueprint to start the development of a Gutenberg block",
+		"author": "fellyph"
+	},
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"login": true,
+	"landingPage": "/wp-admin/",
+	"siteOptions": {
+		"blogname": "Gutenberg Block Training"
+	}
+}
