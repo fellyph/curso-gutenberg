@@ -4,7 +4,7 @@
 	"title": "Meu Primeiro Block",
 	"category": "widgets",
 	"icon": "smiley",
-	"description": "Example block written with ESNext standard and JSX support – build step required.",
+	"description": "Exemplo de bloco escrito com ESNext standard e suporte a JSX",
 	"textdomain": "meu-primeiro-block",
 	"supports": {
 		"html": false
