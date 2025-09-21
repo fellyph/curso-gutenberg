@@ -24,6 +24,11 @@ wp-content/debug.log
 # ====================
 node_modules/
 
+# Composer Dependencies
+# =====================
+vendor/
+composer.lock
+
 # Logs
 # ====
 logs
