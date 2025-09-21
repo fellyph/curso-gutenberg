@@ -15,6 +15,6 @@
 		"playground:start": "npx @wp-playground/cli@latest server --auto-mount --login"
 	},
 	"dependencies": {
-		"wp-scripts": "^0.0.1-security"
+		"@wordpress/scripts": "^30.24.0"
 	}
 }
