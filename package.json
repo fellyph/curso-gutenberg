@@ -11,6 +11,10 @@
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
 		"start": "wp-scripts start",
-		"packages-update": "wp-scripts packages-update"
+		"packages-update": "wp-scripts packages-update",
+		"playground:start": "npx @wp-playground/cli@latest server --auto-mount --login"
+	},
+	"dependencies": {
+		"wp-scripts": "^0.0.1-security"
 	}
 }
