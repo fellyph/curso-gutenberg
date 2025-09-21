@@ -1,5 +1,5 @@
 {
-	"apiVersion": 2,
+	"apiVersion": 3,
 	"name": "create-block/meu-primeiro-block",
 	"title": "Meu Primeiro Block",
 	"category": "widgets",

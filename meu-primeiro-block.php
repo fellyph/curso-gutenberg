@@ -52,13 +52,6 @@ function create_block_meu_primeiro_block_block_init() {
 		filemtime( "$dir/$style_css" )
 	);
 
-	register_block_type(
-		'create-block/meu-primeiro-block',
-		array(
-			'editor_script' => 'create-block-meu-primeiro-block-block-editor',
-			'editor_style'  => 'create-block-meu-primeiro-block-block-editor',
-			'style'         => 'create-block-meu-primeiro-block-block',
-		)
-	);
+	register_block_type( __DIR__ . '/block.json' );
 }
 add_action( 'init', 'create_block_meu_primeiro_block_block_init' );
