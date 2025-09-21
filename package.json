@@ -14,7 +14,11 @@
 		"packages-update": "wp-scripts packages-update",
 		"playground:start": "npx @wp-playground/cli@latest server --auto-mount --login",
 		"test": "playwright test",
-		"test:ui": "playwright test --ui"
+		"test:ui": "playwright test --ui",
+		"i18n:pot": "wp i18n make-pot . languages/meu-primeiro-block.pot --exclude=node_modules,vendor,build",
+		"i18n:po": "wp i18n make-po languages/meu-primeiro-block.pot languages/",
+		"i18n:json": "wp i18n make-json languages/ --no-purge",
+		"i18n:update": "npm run i18n:pot && npm run i18n:po && npm run i18n:json"
 	},
 	"dependencies": {
 		"@wordpress/scripts": "^30.24.0"

@@ -1,0 +1,26 @@
+{
+    "domain": "meu-primeiro-block",
+    "locale_data": {
+        "meu-primeiro-block": {
+            "": {
+                "domain": "meu-primeiro-block",
+                "lang": "es_ES"
+            },
+            "Meu Primeiro Block": [
+                "Mi Primer Bloque"
+            ],
+            "Exemplo de bloco escrito com ESNext standard e suporte a JSX": [
+                "Ejemplo de bloque escrito con estándar ESNext y soporte JSX"
+            ],
+            "Meu Primeiro Block – Olá Curso Gutenberg !!!": [
+                "Mi Primer Bloque – ¡¡¡Hola Curso Gutenberg !!!"
+            ],
+            "Meu Primeiro Block – hello from the saved content!": [
+                "Mi Primer Bloque – ¡hola desde el contenido guardado!"
+            ],
+            "Example block written with ESNext standard and JSX support – build step required.": [
+                "Ejemplo de bloque escrito con estándar ESNext y soporte JSX – se requiere paso de construcción."
+            ]
+        }
+    }
+}
