@@ -35,8 +35,9 @@ import save from './save';
 registerBlockType( 'curso-gutenberg/meu-primeiro-block', {
 	/**
 	 * @see https://make.wordpress.org/core/2020/11/18/block-api-version-2/
+	 * @see https://developer.wordpress.org/news/2021/06/29/blocks-in-an-iframed-template-editor/
 	 */
-	apiVersion: 2,
+	apiVersion: 3,
 
 	/**
 	 * This is the display title for your block, which can be translated with `i18n` functions.
