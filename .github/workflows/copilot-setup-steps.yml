@@ -1,0 +1,62 @@
+name: Copilot Setup Steps
+
+# Primes the GitHub Copilot coding agent ephemeral environment.
+# Keep this lean: install & cache dependencies needed for typical tasks (lint, build, tests).
+# Only the single job named exactly `copilot-setup-steps` is executed by Copilot pre-session.
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+  pull_request:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+
+jobs:
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node from .nvmrc (with npm cache)
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Setup PHP 8.3 + Composer
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.3
+          tools: composer
+          coverage: none
+
+      - name: Gutenberg Block Training project
+        run: npm run build
+
+      - name: Cache Playwright browsers (optional tests)
+        if: hashFiles('package-lock.json') != ''
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            playwright-${{ runner.os }}-
+      - name: (Optional) Generate docs (non-blocking)
+        run: npm run docs --if-present
+        continue-on-error: true
+
+      - name: Summary
+        run: |
+          echo '## Copilot Setup Summary' >> $GITHUB_STEP_SUMMARY
+          echo "* Node & Composer dependencies installed (Node $(cat .nvmrc))" >> $GITHUB_STEP_SUMMARY
+          echo '* Caches primed (npm, composer, playwright)' >> $GITHUB_STEP_SUMMARY
+          echo '* Environment ready for Copilot coding agent' >> $GITHUB_STEP_SUMMARY
+    # To scale resources later, change runs-on to a larger Ubuntu runner label (e.g., ubuntu-4-core) if configured.
+    # Add secrets/vars in repository Settings > Environments > copilot.
