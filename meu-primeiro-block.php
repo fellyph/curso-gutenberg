@@ -8,7 +8,7 @@
  * License URI:     https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:     meu-primeiro-block
  *
- * @package         create-block
+ * @package         curso-gutenberg
  */
 
 /**
@@ -17,28 +17,28 @@
  *
  * @see https://developer.wordpress.org/block-editor/tutorials/block-tutorial/applying-styles-with-stylesheets/
  */
-function create_block_meu_primeiro_block_block_init() {
+function curso_gutenberg_meu_primeiro_block_block_init() {
 	$dir = __DIR__;
 
 	$script_asset_path = "$dir/build/index.asset.php";
 	if ( ! file_exists( $script_asset_path ) ) {
 		throw new Error(
-			'You need to run `npm start` or `npm run build` for the "create-block/meu-primeiro-block" block first.'
+			'You need to run `npm start` or `npm run build` for the "curso-gutenberg/meu-primeiro-block" block first.'
 		);
 	}
 	$index_js     = 'build/index.js';
 	$script_asset = require( $script_asset_path );
 	wp_register_script(
-		'create-block-meu-primeiro-block-block-editor',
+		'curso-gutenberg-meu-primeiro-block-block-editor',
 		plugins_url( $index_js, __FILE__ ),
 		$script_asset['dependencies'],
 		$script_asset['version']
 	);
-	wp_set_script_translations( 'create-block-meu-primeiro-block-block-editor', 'meu-primeiro-block' );
+	wp_set_script_translations( 'curso-gutenberg-meu-primeiro-block-block-editor', 'meu-primeiro-block' );
 
 	$editor_css = 'build/index.css';
 	wp_register_style(
-		'create-block-meu-primeiro-block-block-editor',
+		'curso-gutenberg-meu-primeiro-block-block-editor',
 		plugins_url( $editor_css, __FILE__ ),
 		array(),
 		filemtime( "$dir/$editor_css" )
@@ -46,19 +46,19 @@ function create_block_meu_primeiro_block_block_init() {
 
 	$style_css = 'build/style-index.css';
 	wp_register_style(
-		'create-block-meu-primeiro-block-block',
+		'curso-gutenberg-meu-primeiro-block-block',
 		plugins_url( $style_css, __FILE__ ),
 		array(),
 		filemtime( "$dir/$style_css" )
 	);
 
 	register_block_type(
-		'create-block/meu-primeiro-block',
+		'curso-gutenberg/meu-primeiro-block',
 		array(
-			'editor_script' => 'create-block-meu-primeiro-block-block-editor',
-			'editor_style'  => 'create-block-meu-primeiro-block-block-editor',
-			'style'         => 'create-block-meu-primeiro-block-block',
+			'editor_script' => 'curso-gutenberg-meu-primeiro-block-block-editor',
+			'editor_style'  => 'curso-gutenberg-meu-primeiro-block-block-editor',
+			'style'         => 'curso-gutenberg-meu-primeiro-block-block',
 		)
 	);
 }
-add_action( 'init', 'create_block_meu_primeiro_block_block_init' );
+add_action( 'init', 'curso_gutenberg_meu_primeiro_block_block_init' );
