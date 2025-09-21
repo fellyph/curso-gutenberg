@@ -1,6 +1,6 @@
 {
 	"apiVersion": 2,
-	"name": "create-block/meu-primeiro-block",
+	"name": "curso-gutenberg/meu-primeiro-block",
 	"title": "Meu Primeiro Block",
 	"category": "widgets",
 	"icon": "smiley",
