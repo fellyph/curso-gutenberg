@@ -48,9 +48,6 @@ jobs:
           key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
           restore-keys: |
             playwright-${{ runner.os }}-
-      - name: (Optional) Generate docs (non-blocking)
-        run: npm run docs --if-present
-        continue-on-error: true
 
       - name: Summary
         run: |
