@@ -185,4 +185,7 @@ test.describe('set-wordpress-language', () => {
 ## Important Notes
 
 - **Gutenberg Block-first approach** for content creation and function management. All new features should be implemented as blocks where possible.
+- **Use the Playground to check changes** always use the playground to check if the playground is runing
+- **Create tests for new fuctionalities** to validate the changes keep the tests updates
+- **Translate the documentation** always when a document is included add a portuguese and spanish translation
 
