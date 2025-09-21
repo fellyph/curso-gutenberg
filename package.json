@@ -12,5 +12,8 @@
 		"lint:js": "wp-scripts lint-js",
 		"start": "wp-scripts start",
 		"packages-update": "wp-scripts packages-update"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.24.0"
 	}
 }
