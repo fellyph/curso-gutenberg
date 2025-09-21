@@ -12,9 +12,15 @@
 		"lint:js": "wp-scripts lint-js",
 		"start": "wp-scripts start",
 		"packages-update": "wp-scripts packages-update",
-		"playground:start": "npx @wp-playground/cli@latest server --auto-mount --login"
+		"playground:start": "npx @wp-playground/cli@latest server --auto-mount --login",
+		"test": "playwright test",
+		"test:ui": "playwright test --ui"
 	},
 	"dependencies": {
 		"@wordpress/scripts": "^30.24.0"
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.40.0",
+		"@wp-playground/cli": "^0.1.0"
 	}
 }
