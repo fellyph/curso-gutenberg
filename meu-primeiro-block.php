@@ -3,7 +3,7 @@
  * Plugin Name:     Meu Primeiro Bloco
  * Description:     Bloco criado no curso de WordPress do Fellyph Cintra.
  * Version:         0.1.0
- * Author:          The WordPress Contributors
+ * Author:          Fellyph
  * License:         GPL-2.0-or-later
  * License URI:     https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:     meu-primeiro-block
