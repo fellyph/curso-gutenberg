@@ -4,7 +4,6 @@
  * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
  */
 import { __ } from '@wordpress/i18n';
-
 /**
  * React hook that is used to mark the block wrapper element.
  * It provides all the necessary props like the class name.
@@ -22,12 +21,21 @@ import { useBlockProps } from '@wordpress/block-editor';
 import './editor.scss';
 
 /**
+ * Edit component for the Meu Primeiro Block.
+ *
  * The edit function describes the structure of your block in the context of the
  * editor. This represents what the editor will render when the block is used.
  *
- * @see https://developer.wordpress.org/block-editor/developers/block-api/block-edit-save/#edit
+ * @function Edit
+ * @return {Element} Element to render in the block editor.
  *
- * @return {Element} Element to render.
+ * @example
+ * // Usage in block registration
+ * registerBlockType('curso-gutenberg/meu-primeiro-block', {
+ *   edit: Edit,
+ * });
+ *
+ * @see https://developer.wordpress.org/block-editor/developers/block-api/block-edit-save/#edit
  */
 export default function Edit() {
 	return (
