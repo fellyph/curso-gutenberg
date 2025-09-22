@@ -7,14 +7,25 @@
 	"main": "build/index.js",
 	"scripts": {
 		"build": "wp-scripts build",
+		"build:production": "NODE_ENV=production wp-scripts build",
+		"start": "wp-scripts start",
+		"start:hot": "wp-scripts start --hot",
+		"format": "wp-scripts format",
 		"format:js": "wp-scripts format-js",
+		"format:css": "wp-scripts lint-style --fix",
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
-		"start": "wp-scripts start",
+		"lint:js:fix": "wp-scripts lint-js --fix",
+		"lint:pkg-json": "wp-scripts lint-pkg-json",
+		"lint:php": "composer lint",
+		"lint:all": "npm run lint:js && npm run lint:css && npm run lint:pkg-json",
+		"lint:fix": "npm run lint:js:fix && npm run format:css",
 		"packages-update": "wp-scripts packages-update",
 		"playground:start": "npx @wp-playground/cli@latest server --auto-mount --login",
 		"test": "playwright test",
-		"test:ui": "playwright test --ui"
+		"test:ui": "playwright test --ui",
+		"test:unit": "wp-scripts test-unit-js",
+		"test:e2e": "wp-scripts test-e2e"
 	},
 	"dependencies": {
 		"@wordpress/scripts": "^30.24.0"
