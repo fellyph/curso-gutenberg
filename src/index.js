@@ -4,31 +4,37 @@
  * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
  */
 import { registerBlockType } from '@wordpress/blocks';
-
-/**
- * Retrieves the translation of text.
- *
- * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
- */
 import { __ } from '@wordpress/i18n';
-
-/**
- * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
- * All files containing `style` keyword are bundled together. The code used
- * gets applied both to the front of your site and to the editor.
- *
- * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
- */
-import './style.scss';
 
 /**
  * Internal dependencies
  */
+import './style.scss';
 import Edit from './edit';
 import save from './save';
 
 /**
+ * Block configuration object type definition.
+ *
+ * @typedef {Object} BlockConfig
+ * @property {number}   apiVersion  - Block API version.
+ * @property {string}   title       - Block display title.
+ * @property {string}   description - Block description.
+ * @property {string}   category    - Block category.
+ * @property {string}   icon        - Block icon.
+ * @property {Object}   supports    - Block support features.
+ * @property {Function} edit        - Edit component.
+ * @property {Function} save        - Save component.
+ */
+
+/**
  * Every block starts by registering a new block type definition.
+ *
+ * This block demonstrates the implementation of Gutenberg coding guidelines:
+ * - Proper JSDoc documentation with type definitions
+ * - BEM-inspired CSS class naming conventions
+ * - ES6+ syntax and modern JavaScript patterns
+ * - WordPress coding standards compliance
  *
  * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
  */

@@ -2,7 +2,8 @@
  * The following styles get applied both on the front of your site
  * and in the editor.
  *
- * Replace them with your own styles or remove the file completely.
+ * Follows Gutenberg BEM-inspired naming conventions with
+ * package-directory prefixes
  */
 
 .wp-block-curso-gutenberg-meu-primeiro-block {
@@ -10,4 +11,40 @@
 	color: #fff;
 	padding: 16px;
 	text-align: center;
+	border-radius: 4px;
+	transition: all 0.2s ease-in-out;
+
+	// State indicators following is-* pattern
+	&.is-highlighted {
+		box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--wp-admin-theme-color);
+	}
+
+	&.is-loading {
+		opacity: 0.6;
+		pointer-events: none;
+	}
+
+	// Component elements following BEM methodology
+	&__content {
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	&__icon {
+		margin-right: 8px;
+		width: 20px;
+		height: 20px;
+	}
+
+	// Modifier classes following has-* pattern for features
+	&.has-large-text {
+
+		.wp-block-curso-gutenberg-meu-primeiro-block__content {
+			font-size: 20px;
+		}
+	}
+
+	&.has-border {
+		border: 2px solid currentcolor;
+	}
 }
