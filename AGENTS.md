@@ -1,5 +1,3 @@
-This file provides guidance to AI agents when working with code in this repository.
-
 ## WordPress Gutenberg Training
 This is a repository with exercises from the WordPress Gutenberg Training. It's a Guterberg block, where the exercises are organized by branches:
 
