@@ -62,7 +62,7 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 	useEffect( () => {
 		if ( ! cardId ) {
 			setAttributes( {
-				cardId: `review-${ clientId.substr( 0, 8 ) }`,
+				cardId: `review-${ clientId.substring( 0, 8 ) }`,
 			} );
 		}
 	}, [ cardId, clientId, setAttributes ] );
