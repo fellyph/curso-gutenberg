@@ -1,0 +1,29 @@
+/**
+ * Review Item - Styles
+ */
+
+.review-item {
+	background: #f8f9fa;
+	border-left: 4px solid #667eea;
+	padding: 1.5rem;
+	margin: 1rem 0;
+	border-radius: 4px;
+
+	&__context-info {
+		display: none; // Hidden on frontend, shown in editor
+	}
+
+	&__title {
+		margin: 0 0 1rem 0;
+		color: #1e1e1e;
+		font-size: 1.25rem;
+	}
+
+	&__content {
+		p {
+			margin: 0;
+			line-height: 1.6;
+			color: #3c434a;
+		}
+	}
+}

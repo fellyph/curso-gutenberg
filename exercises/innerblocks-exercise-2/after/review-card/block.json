@@ -1,0 +1,31 @@
+{
+	"apiVersion": 3,
+	"name": "curso-gutenberg/review-card-after",
+	"title": "Review Card (After)",
+	"category": "design",
+	"icon": "star-filled",
+	"description": "Advanced review card with useInnerBlocksProps and block context",
+	"keywords": [ "review", "card", "rating", "testimonial" ],
+	"textdomain": "curso-gutenberg",
+	"attributes": {
+		"cardId": {
+			"type": "string",
+			"default": ""
+		},
+		"reviewRating": {
+			"type": "number",
+			"default": 5
+		}
+	},
+	"providesContext": {
+		"curso-gutenberg/cardId": "cardId",
+		"curso-gutenberg/reviewRating": "reviewRating"
+	},
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ]
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

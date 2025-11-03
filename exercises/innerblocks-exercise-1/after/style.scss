@@ -1,0 +1,47 @@
+/**
+ * Content Container (After) - Styles
+ * 
+ * Styles for both editor and frontend with InnerBlocks.
+ */
+
+.content-container-after {
+	padding: 2rem;
+	background-color: #f8f9fa;
+	border: 2px solid #2271b1;
+	border-radius: 8px;
+	margin: 1rem 0;
+
+	&__inner {
+		max-width: 800px;
+		margin: 0 auto;
+
+		// Style for nested blocks
+		.wp-block-heading,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-top: 0;
+			color: #1e1e1e;
+		}
+
+		.wp-block-paragraph,
+		p {
+			line-height: 1.6;
+			color: #3c434a;
+			margin: 1rem 0;
+		}
+
+		.wp-block-image {
+			margin: 1.5rem 0;
+
+			img {
+				border-radius: 4px;
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+}

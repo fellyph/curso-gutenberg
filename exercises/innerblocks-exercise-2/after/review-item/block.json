@@ -1,0 +1,24 @@
+{
+	"apiVersion": 3,
+	"name": "curso-gutenberg/review-item",
+	"title": "Review Item",
+	"category": "design",
+	"icon": "star-empty",
+	"description": "Review item that displays context from parent review card",
+	"keywords": [ "review", "item", "child" ],
+	"parent": [ "curso-gutenberg/review-card-after" ],
+	"usesContext": [ "curso-gutenberg/cardId", "curso-gutenberg/reviewRating" ],
+	"textdomain": "curso-gutenberg",
+	"attributes": {
+		"itemTitle": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
