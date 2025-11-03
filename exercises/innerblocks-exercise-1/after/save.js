@@ -5,7 +5,7 @@ import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 
 /**
  * Save component for Content Container (After InnerBlocks)
- * 
+ *
  * IMPORTANT: Always use InnerBlocks.Content (not InnerBlocks)
  * in the save function to render the saved nested blocks.
  *

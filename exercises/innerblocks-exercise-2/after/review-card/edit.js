@@ -42,14 +42,17 @@ const TEMPLATE = [
 
 /**
  * Edit component for Review Card (After - with advanced features)
- * 
+ *
  * This version demonstrates:
  * - useInnerBlocksProps for better markup control
  * - providesContext to share data with child blocks
  * - Custom header and footer alongside InnerBlocks
  * - Inspector controls for card settings
  *
- * @param {Object} props Block props
+ * @param {Object}   props               Block props
+ * @param {Object}   props.attributes    Block attributes
+ * @param {Function} props.setAttributes Function to update attributes
+ * @param {string}   props.clientId      Block client ID
  * @return {Element} Element to render in the editor.
  */
 export default function Edit( { attributes, setAttributes, clientId } ) {
@@ -120,7 +123,7 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 			</InspectorControls>
 
 			<div { ...blockProps }>
-				{/* Custom header with rating */ }
+				{ /* Custom header with rating */ }
 				<div className="review-card-after__header">
 					<span className="review-card-after__rating">
 						{ renderStars( reviewRating ) }
@@ -130,16 +133,13 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 					</span>
 				</div>
 
-				{/* InnerBlocks area using useInnerBlocksProps */ }
+				{ /* InnerBlocks area using useInnerBlocksProps */ }
 				<div { ...innerBlocksProps } />
 
-				{/* Custom footer */ }
+				{ /* Custom footer */ }
 				<div className="review-card-after__footer">
 					<small>
-						{ __(
-							'✓ Verified Review',
-							'curso-gutenberg'
-						) }
+						{ __( '✓ Verified Review', 'curso-gutenberg' ) }
 					</small>
 				</div>
 			</div>

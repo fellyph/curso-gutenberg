@@ -6,7 +6,7 @@ import { useBlockProps } from '@wordpress/block-editor';
 
 /**
  * Save component for Content Container (Before InnerBlocks)
- * 
+ *
  * This renders the static content on the frontend.
  *
  * @return {Element} Element to render on the frontend.
@@ -27,7 +27,9 @@ export default function save() {
 					) }
 				</p>
 				<div className="content-container-before__image-placeholder">
-					<span>{ __( '🖼️ Image Placeholder', 'curso-gutenberg' ) }</span>
+					<span>
+						{ __( '🖼️ Image Placeholder', 'curso-gutenberg' ) }
+					</span>
 				</div>
 				<p>
 					{ __(

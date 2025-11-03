@@ -11,7 +11,7 @@ import './editor.scss';
 
 /**
  * Edit component for Content Container (Before InnerBlocks)
- * 
+ *
  * This is a static block with hardcoded content.
  * Users cannot customize the content inside the container.
  *
@@ -33,7 +33,9 @@ export default function Edit() {
 					) }
 				</p>
 				<div className="content-container-before__image-placeholder">
-					<span>{ __( '🖼️ Image Placeholder', 'curso-gutenberg' ) }</span>
+					<span>
+						{ __( '🖼️ Image Placeholder', 'curso-gutenberg' ) }
+					</span>
 				</div>
 				<p>
 					{ __(

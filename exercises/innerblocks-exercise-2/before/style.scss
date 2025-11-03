@@ -3,7 +3,7 @@
  */
 
 .review-card-before {
-	background: #ffffff;
+	background: #fff;
 	border: 1px solid #e0e0e0;
 	border-radius: 8px;
 	padding: 2rem;
@@ -11,6 +11,7 @@
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 	&__content {
+
 		.wp-block-heading,
 		h3 {
 			margin-top: 0;

@@ -5,10 +5,11 @@ import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
 
 /**
  * Save component for Review Card (After)
- * 
+ *
  * Uses useInnerBlocksProps in save function for consistent markup.
  *
- * @param {Object} props Block props
+ * @param {Object} props            Block props
+ * @param {Object} props.attributes Block attributes
  * @return {Element} Element to render on the frontend.
  */
 export default function save( { attributes } ) {
@@ -33,7 +34,9 @@ export default function save( { attributes } ) {
 				<span className="review-card-after__rating">
 					{ renderStars( reviewRating ) }
 				</span>
-				<span className="review-card-after__id">Review #{ cardId }</span>
+				<span className="review-card-after__id">
+					Review #{ cardId }
+				</span>
 			</div>
 
 			<div { ...innerBlocksProps } />

@@ -34,17 +34,14 @@ const TEMPLATE = [
 	[
 		'core/paragraph',
 		{
-			placeholder: __(
-				'Write your review here...',
-				'curso-gutenberg'
-			),
+			placeholder: __( 'Write your review here…', 'curso-gutenberg' ),
 		},
 	],
 ];
 
 /**
  * Edit component for Review Card (Before advanced features)
- * 
+ *
  * This version uses basic InnerBlocks without:
  * - useInnerBlocksProps
  * - Block relationships

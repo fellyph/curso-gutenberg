@@ -24,7 +24,7 @@ const TEMPLATE = [
 		'core/heading',
 		{
 			level: 2,
-			placeholder: __( 'Enter your title here...', 'curso-gutenberg' ),
+			placeholder: __( 'Enter your title here…', 'curso-gutenberg' ),
 		},
 	],
 	[
@@ -41,7 +41,7 @@ const TEMPLATE = [
 		'core/paragraph',
 		{
 			placeholder: __(
-				'Add more content below the image...',
+				'Add more content below the image…',
 				'curso-gutenberg'
 			),
 		},
@@ -50,7 +50,7 @@ const TEMPLATE = [
 
 /**
  * Edit component for Content Container (After InnerBlocks)
- * 
+ *
  * This block uses InnerBlocks to allow users to add and customize content.
  * - allowedBlocks restricts insertable blocks to paragraph and image only
  * - template pre-fills with a structured layout

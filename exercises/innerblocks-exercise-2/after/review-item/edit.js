@@ -11,13 +11,16 @@ import './editor.scss';
 
 /**
  * Edit component for Review Item
- * 
+ *
  * This child block demonstrates:
  * - parent relationship (can only be inserted in review-card-after)
  * - usesContext to receive data from parent
  * - Displaying context values in the editor
  *
- * @param {Object} props Block props including context
+ * @param {Object}   props               Block props including context
+ * @param {Object}   props.attributes    Block attributes
+ * @param {Function} props.setAttributes Function to update attributes
+ * @param {Object}   props.context       Block context from parent
  * @return {Element} Element to render in the editor.
  */
 export default function Edit( { attributes, setAttributes, context } ) {
@@ -45,10 +48,7 @@ export default function Edit( { attributes, setAttributes, context } ) {
 				className="review-item__title"
 				value={ itemTitle }
 				onChange={ ( value ) => setAttributes( { itemTitle: value } ) }
-				placeholder={ __(
-					'Review item title...',
-					'curso-gutenberg'
-				) }
+				placeholder={ __( 'Review item title…', 'curso-gutenberg' ) }
 			/>
 
 			<div className="review-item__content">
