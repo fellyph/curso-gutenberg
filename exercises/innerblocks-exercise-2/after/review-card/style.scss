@@ -1,0 +1,72 @@
+/**
+ * Review Card (After) - Styles
+ */
+
+.review-card-after {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	border-radius: 12px;
+	padding: 0;
+	margin: 1rem 0;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+
+	&__header {
+		background: rgba(255, 255, 255, 0.15);
+		padding: 1rem 1.5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: #fff;
+		font-weight: 600;
+	}
+
+	&__rating {
+		font-size: 1.2rem;
+	}
+
+	&__id {
+		font-size: 0.9rem;
+		opacity: 0.9;
+	}
+
+	&__content {
+		background: #fff;
+		padding: 2rem;
+
+		.wp-block-heading,
+		h3 {
+			margin-top: 0;
+			color: #1e1e1e;
+			font-size: 1.5rem;
+		}
+
+		.wp-block-image {
+			margin: 1.5rem 0;
+
+			img {
+				border-radius: 8px;
+				max-width: 100%;
+				height: auto;
+			}
+		}
+
+		.wp-block-paragraph,
+		p {
+			line-height: 1.6;
+			color: #3c434a;
+			margin: 1rem 0;
+		}
+	}
+
+	&__footer {
+		background: #f8f9fa;
+		padding: 1rem 1.5rem;
+		text-align: center;
+		color: #059669;
+		font-weight: 600;
+
+		small {
+			font-size: 0.85rem;
+		}
+	}
+}

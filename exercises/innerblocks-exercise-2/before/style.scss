@@ -1,0 +1,39 @@
+/**
+ * Review Card (Before) - Styles
+ */
+
+.review-card-before {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 2rem;
+	margin: 1rem 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+	&__content {
+
+		.wp-block-heading,
+		h3 {
+			margin-top: 0;
+			color: #1e1e1e;
+			font-size: 1.5rem;
+		}
+
+		.wp-block-image {
+			margin: 1.5rem 0;
+
+			img {
+				border-radius: 4px;
+				max-width: 100%;
+				height: auto;
+			}
+		}
+
+		.wp-block-paragraph,
+		p {
+			line-height: 1.6;
+			color: #3c434a;
+			margin: 1rem 0;
+		}
+	}
+}

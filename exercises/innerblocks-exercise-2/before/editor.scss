@@ -1,0 +1,25 @@
+/**
+ * Review Card (Before) - Editor Styles
+ */
+
+.wp-block-curso-gutenberg-review-card-before {
+
+	.review-card-before {
+		position: relative;
+
+		&::before {
+			content: "Basic Review Card";
+			position: absolute;
+			top: 0.5rem;
+			right: 0.5rem;
+			background: #7e3af2;
+			color: #fff;
+			padding: 0.25rem 0.75rem;
+			border-radius: 4px;
+			font-size: 0.75rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			z-index: 1;
+		}
+	}
+}

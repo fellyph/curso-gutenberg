@@ -1,0 +1,27 @@
+/**
+ * Content Container (Before) - Editor Styles
+ *
+ * Styles specific to the block editor.
+ */
+
+.wp-block-curso-gutenberg-content-container-before {
+
+	.content-container-before {
+		// Editor-specific styles can go here
+		position: relative;
+
+		&::before {
+			content: "Static Content (Before InnerBlocks)";
+			position: absolute;
+			top: 0.5rem;
+			right: 0.5rem;
+			background: #2271b1;
+			color: #fff;
+			padding: 0.25rem 0.75rem;
+			border-radius: 4px;
+			font-size: 0.75rem;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+	}
+}
