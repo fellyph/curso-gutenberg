@@ -109,11 +109,19 @@ Thumbs.db
 # ===============
 *.tmp
 *.temp
+*.backup
+*.bak
 
 # WordPress Scripts specific
 # ==========================
 # These are generated during build and should not be committed
 *.asset.php
+
+# Test results
+# ============
+test-results/
+playwright-report/
+.playwright/
 
 # TypeScript
 # ==========
