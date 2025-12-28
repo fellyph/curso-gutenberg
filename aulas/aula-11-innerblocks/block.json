@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "curso-gutenberg/feature-box",
+	"version": "1.0.0",
+	"title": "Feature Box",
+	"category": "design",
+	"icon": "star-filled",
+	"description": "Um bloco container com InnerBlocks para destacar features.",
+	"keywords": ["feature", "box", "container"],
+	"textdomain": "curso-gutenberg",
+	"attributes": {
+		"backgroundColor": {
+			"type": "string",
+			"default": "#f8f9fa"
+		},
+		"iconColor": {
+			"type": "string",
+			"default": "#0073aa"
+		}
+	},
+	"providesContext": {
+		"curso-gutenberg/iconColor": "iconColor"
+	},
+	"supports": {
+		"html": false,
+		"align": ["wide", "full"],
+		"spacing": {
+			"padding": true,
+			"margin": true
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

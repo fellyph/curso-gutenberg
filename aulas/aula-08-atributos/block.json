@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "curso-gutenberg/bloco-citacao",
+	"version": "1.0.0",
+	"title": "Bloco de Citação",
+	"category": "text",
+	"icon": "format-quote",
+	"description": "Um bloco de citação personalizado com atributos.",
+	"keywords": ["citação", "quote", "texto"],
+	"textdomain": "curso-gutenberg",
+	"attributes": {
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "blockquote p",
+			"default": ""
+		},
+		"author": {
+			"type": "string",
+			"source": "html",
+			"selector": "cite",
+			"default": ""
+		},
+		"showBorder": {
+			"type": "boolean",
+			"default": true
+		},
+		"borderColor": {
+			"type": "string",
+			"default": "#0073aa"
+		},
+		"alignment": {
+			"type": "string",
+			"default": "left"
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": ["wide", "full"]
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

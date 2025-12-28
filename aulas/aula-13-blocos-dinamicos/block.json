@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "curso-gutenberg/ultimos-posts",
+	"version": "1.0.0",
+	"title": "Últimos Posts",
+	"category": "widgets",
+	"icon": "list-view",
+	"description": "Bloco dinâmico que exibe os últimos posts de uma categoria.",
+	"keywords": ["posts", "recentes", "categoria"],
+	"textdomain": "curso-gutenberg",
+	"attributes": {
+		"numberOfPosts": {
+			"type": "number",
+			"default": 3
+		},
+		"categoryId": {
+			"type": "number",
+			"default": 0
+		},
+		"showExcerpt": {
+			"type": "boolean",
+			"default": true
+		},
+		"showDate": {
+			"type": "boolean",
+			"default": true
+		},
+		"showFeaturedImage": {
+			"type": "boolean",
+			"default": true
+		},
+		"columns": {
+			"type": "number",
+			"default": 3
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": ["wide", "full"]
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

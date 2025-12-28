@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "curso-gutenberg/faq-accordion",
+	"version": "1.0.0",
+	"title": "FAQ Accordion",
+	"category": "design",
+	"icon": "editor-help",
+	"description": "Bloco de FAQ interativo usando a WordPress Interactivity API.",
+	"keywords": ["faq", "accordion", "perguntas"],
+	"textdomain": "curso-gutenberg",
+	"attributes": {
+		"allowMultiple": {
+			"type": "boolean",
+			"default": false
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"id": "faq-1",
+					"question": "Qual é a primeira pergunta?",
+					"answer": "Esta é a resposta para a primeira pergunta."
+				}
+			]
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": ["wide", "full"],
+		"interactivity": true
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php"
+}
