@@ -1,0 +1,61 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "curso-gutenberg/card-completo",
+	"version": "1.0.0",
+	"title": "Card Completo",
+	"category": "design",
+	"icon": "id-alt",
+	"description": "Um bloco de card com imagem, título e descrição usando componentes do Block Editor.",
+	"keywords": ["card", "cartão", "imagem"],
+	"textdomain": "curso-gutenberg",
+	"attributes": {
+		"imageUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"imageId": {
+			"type": "number",
+			"default": 0
+		},
+		"imageAlt": {
+			"type": "string",
+			"default": ""
+		},
+		"title": {
+			"type": "string",
+			"source": "html",
+			"selector": "h3",
+			"default": ""
+		},
+		"description": {
+			"type": "string",
+			"source": "html",
+			"selector": "p",
+			"default": ""
+		},
+		"buttonText": {
+			"type": "string",
+			"default": "Saiba mais"
+		},
+		"buttonUrl": {
+			"type": "string",
+			"default": "#"
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"textColor": {
+			"type": "string",
+			"default": "#333333"
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": ["left", "center", "right", "wide"]
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
