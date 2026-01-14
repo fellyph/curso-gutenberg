@@ -1,0 +1,24 @@
+/**
+ * Review Item - Editor Styles
+ */
+
+.wp-block-curso-gutenberg-review-item {
+
+	.review-item {
+
+		&__context-info {
+			display: block;
+			background: #e0e7ff;
+			color: #4338ca;
+			padding: 0.5rem 1rem;
+			margin-bottom: 1rem;
+			border-radius: 4px;
+			font-family: monospace;
+			font-size: 0.85rem;
+
+			small {
+				font-weight: 600;
+			}
+		}
+	}
+}

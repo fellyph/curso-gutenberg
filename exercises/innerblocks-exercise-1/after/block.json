@@ -1,0 +1,18 @@
+{
+	"apiVersion": 3,
+	"name": "curso-gutenberg/content-container-after",
+	"title": "Content Container (After)",
+	"category": "layout",
+	"icon": "align-center",
+	"description": "A dynamic container using InnerBlocks with allowed blocks and template",
+	"keywords": [ "container", "wrapper", "layout", "innerblocks" ],
+	"textdomain": "curso-gutenberg",
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"align": [ "wide", "full" ]
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

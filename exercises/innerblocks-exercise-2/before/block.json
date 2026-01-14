@@ -1,0 +1,17 @@
+{
+	"apiVersion": 3,
+	"name": "curso-gutenberg/review-card-before",
+	"title": "Review Card (Before)",
+	"category": "design",
+	"icon": "star-filled",
+	"description": "Basic review card with standard InnerBlocks - before advanced features",
+	"keywords": [ "review", "card", "rating", "testimonial" ],
+	"textdomain": "curso-gutenberg",
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ]
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

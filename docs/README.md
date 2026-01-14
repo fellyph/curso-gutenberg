@@ -14,11 +14,39 @@ A complete hands-on training exercise for mastering `@wordpress/scripts` in Word
 - 🇧🇷 **Português**: [`wp-scripts-mastery-guide-pt.md`](./wp-scripts-mastery-guide-pt.md)
 - 🇪🇸 **Español**: [`wp-scripts-mastery-guide-es.md`](./wp-scripts-mastery-guide-es.md)
 
+### InnerBlocks and Nested Blocks
+
+A comprehensive guide for mastering nested blocks and the InnerBlocks component in WordPress Gutenberg development.
+
+**Available in multiple languages:**
+
+- 🇺🇸 **English**: [`innerblocks-nested-blocks-guide.md`](./innerblocks-nested-blocks-guide.md)
+- 🇧🇷 **Português**: [`innerblocks-nested-blocks-guide-pt.md`](./innerblocks-nested-blocks-guide-pt.md)
+- 🇪🇸 **Español**: [`innerblocks-nested-blocks-guide-es.md`](./innerblocks-nested-blocks-guide-es.md)
+
 ### Playground CLI
 
 - 🇺🇸 **English**: [`playground-cli-getting-started.md`](./playground-cli-getting-started.md)
 
 ## 🎯 Exercise Overview
+
+### InnerBlocks and Nested Blocks Exercise
+
+The InnerBlocks exercise includes two hands-on projects:
+
+#### Exercise 1: Container Block with Allowed Blocks
+- Basic InnerBlocks component usage
+- Restricting allowed child blocks
+- Creating block templates
+- Template locking strategies
+
+#### Exercise 2: Advanced InnerBlocks with Relationships
+- Using the useInnerBlocksProps hook
+- Block parent/ancestor relationships
+- Block context API
+- Custom wrapper markup
+
+### wp-scripts Mastery Exercise
 
 The wp-scripts mastery exercise covers:
 

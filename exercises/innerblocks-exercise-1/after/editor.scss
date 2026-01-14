@@ -1,0 +1,36 @@
+/**
+ * Content Container (After) - Editor Styles
+ *
+ * Styles specific to the block editor for InnerBlocks.
+ */
+
+.wp-block-curso-gutenberg-content-container-after {
+
+	.content-container-after {
+		position: relative;
+
+		&::before {
+			content: "Dynamic Content (With InnerBlocks)";
+			position: absolute;
+			top: 0.5rem;
+			right: 0.5rem;
+			background: #2271b1;
+			color: #fff;
+			padding: 0.25rem 0.75rem;
+			border-radius: 4px;
+			font-size: 0.75rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			z-index: 1;
+		}
+
+		// Style the InnerBlocks area in the editor
+		.block-editor-inner-blocks {
+			margin: 0;
+		}
+
+		.block-editor-block-list__layout {
+			padding: 0;
+		}
+	}
+}

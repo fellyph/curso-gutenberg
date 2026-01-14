@@ -1,0 +1,41 @@
+/**
+ * Content Container (Before) - Styles
+ *
+ * Styles for both editor and frontend.
+ */
+
+.content-container-before {
+	padding: 2rem;
+	background-color: #f0f0f1;
+	border: 2px dashed #ccc;
+	border-radius: 8px;
+	margin: 1rem 0;
+
+	&__inner {
+		max-width: 800px;
+		margin: 0 auto;
+
+		h2 {
+			margin-top: 0;
+			color: #1e1e1e;
+			font-size: 1.5rem;
+		}
+
+		p {
+			line-height: 1.6;
+			color: #3c434a;
+			margin: 1rem 0;
+		}
+	}
+
+	&__image-placeholder {
+		background: #fff;
+		border: 2px dashed #8c8f94;
+		border-radius: 4px;
+		padding: 3rem;
+		text-align: center;
+		margin: 1.5rem 0;
+		color: #8c8f94;
+		font-size: 1.2rem;
+	}
+}
