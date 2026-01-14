@@ -1,10 +1,40 @@
 /**
  * The following styles get applied inside the editor only.
  *
- * Replace them with your own styles or remove the file completely.
+ * Editor-specific styles following Gutenberg guidelines
  */
 
 .wp-block-curso-gutenberg-meu-primeiro-block {
 	border: 5px dotted rgb(228, 204, 17);
 	text-align: right;
+	position: relative;
+
+	// Editor-specific state indicators
+	&.is-selected {
+		border-color: var(--wp-admin-theme-color);
+		border-style: solid;
+	}
+
+	&.is-hovered {
+		border-color: #949494;
+	}
+
+	// Editor-only component elements
+	&__editor-controls {
+		position: absolute;
+		top: 8px;
+		right: 8px;
+		opacity: 0;
+		transition: opacity 0.2s ease;
+	}
+
+	&:hover .wp-block-curso-gutenberg-meu-primeiro-block__editor-controls {
+		opacity: 1;
+	}
+
+	// Editor-specific modifiers
+	&.has-focus-within {
+		outline: 1px solid var(--wp-admin-theme-color);
+		outline-offset: 2px;
+	}
 }
