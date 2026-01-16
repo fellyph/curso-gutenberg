@@ -1,0 +1,47 @@
+# Copyright (C) 2024 Fellyph
+# This file is distributed under the same license as the Meu Primeiro Bloco plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Meu Primeiro Bloco 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/meu-primeiro-block\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-09-21T21:15:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: meu-primeiro-block\n"
+
+#. Plugin Name of the plugin
+msgid "Meu Primeiro Bloco"
+msgstr ""
+
+#. Description of the plugin
+msgid "Bloco criado no curso de WordPress do Fellyph Cintra."
+msgstr ""
+
+#: block.json
+msgid "Meu Primeiro Block"
+msgstr ""
+
+#: block.json
+msgid "Exemplo de bloco escrito com ESNext standard e suporte a JSX"
+msgstr ""
+
+#: src/edit.js:35
+msgid "Meu Primeiro Block – Olá Curso Gutenberg !!!"
+msgstr ""
+
+#: src/save.js:28
+msgid "Meu Primeiro Block – hello from the saved content!"
+msgstr ""
+
+#: src/index.js:52
+msgid "Example block written with ESNext standard and JSX support – build step required."
+msgstr ""
+
+#: meu-primeiro-block.php:38
+msgid "You need to run `npm start` or `npm run build` for the \"curso-gutenberg/meu-primeiro-block\" block first."
+msgstr ""
